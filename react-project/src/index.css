@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html, */
+/* body{
+  height: 100%;
+  width: 100%;
+} */
+body{
+  background-color:black;
+  color: white;
+}
+h1{
+  /* position: absolute; */
+  text-decoration: underline;
+  font-size: 70px;
+  font-weight: 600;
+  /* top: 50vh;
+  left: 50vw;
+  transform: translate(-50%,-50%); */
+  color: fff;
+}
+/* button{
+  background-color: lightseagreen;
+  padding: 5px 10px;
+
+}
+h2{
+  background-color: crimson;
+} */
+
+
+
