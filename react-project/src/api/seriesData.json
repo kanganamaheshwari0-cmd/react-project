@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Stranger Things",
+    "id": "stranger-things",
+    "img_url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
+    "rating": "8.7",
+    "description": "A group of friends discovers supernatural mysteries in their small town.",
+    "cast": ["Millie Bobby Brown", "Finn Wolfhard", "Noah Schnapp"],
+    "genre": ["Sci-Fi", "Drama", "Mystery"],
+    "watch_url": "https://www.netflix.com/"
+  },
+  {
+    "name": "Money Heist",
+    "id": "money-heist",
+    "img_url": "https://images.unsplash.com/photo-1519608487953-e999c86e7455",
+    "rating": "8.2",
+    "description": "A mysterious mastermind leads a group of criminals in an ambitious heist.",
+    "cast": ["Alvaro Morte", "Ursula Corbero", "Itziar Ituno"],
+    "genre": ["Crime", "Drama", "Thriller"],
+    "watch_url": "https://www.netflix.com/"
+  },
+  {
+    "name": "Squid Game",
+    "id": "squid-game",
+    "img_url": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30",
+    "rating": "8.0",
+    "description": "Hundreds of players risk their lives in deadly games for a huge cash prize.",
+    "cast": ["Lee Jung-jae", "Park Hae-soo", "Wi Ha-joon"],
+    "genre": ["Action", "Drama", "Mystery"],
+    "watch_url": "https://www.netflix.com/"
+  },
+  {
+    "name": "Wednesday",
+    "id": "wednesday",
+    "img_url": "https://images.unsplash.com/photo-1509248961158-e54f6934749c",
+    "rating": "8.1",
+    "description": "A young girl investigates supernatural mysteries while studying at a strange academy.",
+    "cast": ["Jenna Ortega", "Emma Myers", "Catherine Zeta-Jones"],
+    "genre": ["Comedy", "Fantasy", "Mystery"],
+    "watch_url": "https://www.netflix.com/"
+  },
+  {
+    "name": "The Queen of Tears",
+    "id": "queen-of-tears",
+    "img_url": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570",
+    "rating": "8.5",
+    "description": "A gripping tale of love, loss and resilience set against the backdrop of a troubled nation.",
+    "cast": ["Kim Soo Hyun", "Kim Ji Won"],
+    "genre": ["Drama", "Romance"],
+    "watch_url": "https://www.netflix.com/"
+  }
+]

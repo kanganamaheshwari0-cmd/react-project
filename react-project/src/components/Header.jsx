@@ -31,18 +31,31 @@
 
 // export default Header
 
-import React, { useContext } from 'react'
-import { DataContext } from '../context/UserContext'
+// import React, { useContext } from 'react'
+// import { DataContext } from '../context/UserContext'
+
+// const Header = () => {
+//     const username = useContext(DataContext)
+//   return (
+//     <div>
+//       <h1>Header {username.age}</h1>
+//     </div>
+//   )
+// }
+
+// export default Header
+
+import React from 'react'
 
 const Header = () => {
-    const username = useContext(DataContext)
   return (
     <div>
-      <h1>Header {username.age}</h1>
+      Header
     </div>
   )
 }
 
 export default Header
+
 
 

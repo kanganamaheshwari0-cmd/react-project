@@ -335,27 +335,41 @@
 
 //CONTEXT API
 
-import React, { useContext } from 'react'
-import Header from './components/Header'
-import Section from './components/Section'
-import Footer from './components/Footer'
-import {DataContext} from './context/UserContext'
+// import React, { useContext } from 'react'
+// import Header from './components/Header'
+// import Section from './components/Section'
+// import Footer from './components/Footer'
+// import {DataContext} from './context/UserContext'
+
+// const App = () => {
+
+//   const data = useContext(DataContext)
+//   // console.log(data)
+//   return (
+//     <div>
+//       <h1>This is App {data.username}</h1>
+//       <Header/>
+//       <Section/>
+//       <Footer/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+import NetflixSeries from "./components/NetflixSeries";
+import React from 'react'
 
 const App = () => {
-
-  const data = useContext(DataContext)
-  // console.log(data)
   return (
     <div>
-      <h1>This is App {data.username}</h1>
-      <Header/>
-      <Section/>
-      <Footer/>
+      <NetflixSeries/>
     </div>
   )
 }
 
 export default App
+
 
 
 
