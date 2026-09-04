@@ -361,12 +361,8 @@ import NetflixSeries from "./components/NetflixSeries";
 import React from 'react'
 
 const App = () => {
-  return (
-    <div>
-      <NetflixSeries/>
-    </div>
-  )
-}
+  return <NetflixSeries/>;
+};
 
 export default App
 
