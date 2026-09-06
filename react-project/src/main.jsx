@@ -1,10 +1,10 @@
 
 import { createRoot } from 'react-dom/client'
 import './index.css'
-// import App from './App'
+import App from './App'
 // import {App} from './pages/App'
 import UserContext from './context/UserContext'
-import Profile from './components/Profile'
+// import Profile from './components/Profile'
 
 // import {BrowserRouter} from 'react-router-dom'
 
@@ -13,8 +13,8 @@ import Profile from './components/Profile'
 createRoot(document.getElementById('root')).render(
   // <BrowserRouter>
   <UserContext>
-  {/* <App/> */}
-  <Profile/>
+  <App/>
+  {/* <Profile/> */}
 
   </UserContext>
   // </BrowserRouter>

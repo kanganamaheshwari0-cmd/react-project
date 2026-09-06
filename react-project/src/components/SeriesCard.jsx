@@ -1,8 +1,8 @@
- export const SeriesCard = ({data}) => {
+  const SeriesCard = ({data}) => {
     // console.log(props)
     const {id, img_url, name, rating, description, cast, genre, watch_url } = data;
     return(
-                <li key={props}>
+                <li>
                     <div>
                         <img src={img_url}
                          alt={name}
@@ -21,3 +21,5 @@
                 </li>
             );
 }
+
+export default SeriesCard;

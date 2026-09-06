@@ -358,12 +358,18 @@
 // export default App
 
 import NetflixSeries from "./components/NetflixSeries";
+import "./components/Netflix.css";
 import React from 'react'
-import Profile from "./components/Profile";
+// import Profile from "./components/Profile";
 
 const App = () => {
-  return <NetflixSeries/>;
-  <Profile/>
+  return (
+    <section className="container">
+      <h1 className="card-heading">List of Best Netflix Series</h1>
+  <NetflixSeries/>;
+  </section>
+  // <Profile/>
+  );
 };
 
 export default App
