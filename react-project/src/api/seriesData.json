@@ -1,14 +1,14 @@
 [
   {
-    "name": "Stranger Things",
-    "id": "stranger-things",
-    "img_url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
-    "rating": "8.7",
-    "description": "A group of friends discovers supernatural mysteries in their small town.",
-    "cast": ["Millie Bobby Brown", "Finn Wolfhard", "Noah Schnapp"],
-    "genre": ["Sci-Fi", "Drama", "Mystery"],
-    "watch_url": "https://www.netflix.com/"
-  },
+  "name": "Stranger Things",
+  "id": "stranger-things",
+  "img_url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
+  "rating": "8.7",
+  "description": "A group of friends discovers supernatural mysteries in their small town.",
+  "cast": ["Millie Bobby Brown", "Finn Wolfhard", "Noah Schnapp"],
+  "genre": ["Sci-Fi", "Drama", "Mystery"],
+  "watch_url": "https://www.netflix.com/"
+},
   {
     "name": "Money Heist",
     "id": "money-heist",
