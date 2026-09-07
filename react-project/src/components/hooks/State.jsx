@@ -10,20 +10,30 @@ const State = () => {
     // }
     console.log(useState());
     const [count, setCount] = useState(0);
+    console.log("Parent Component rendered");
     const handleButtonClick = () => {
         setCount(() => count + 1)
     }
     // console.log(count)
     return (
         <>
-        <section className="main-div">
+        <div className="main-div">
         <h1>{count}</h1>
         <button className="g-div" onClick={handleButtonClick}>Increment</button>
-        </section>
+        </div>
+        <ChildComponent count={count}/>
         </>
         
     );
 };
+
+function ChildComponent({count}) {
+    console.log("Child Component rendered");
+    return <div className="main-div"> <h2>Child Component - {count} </h2></div>
+}
+
+
+ 
 
 
 export default State
