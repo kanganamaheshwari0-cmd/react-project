@@ -8,7 +8,7 @@ const State = () => {
     //     value++;
     //     console.log(value);
     // }
-    console.log(useState());
+    // console.log(useState());
     const [count, setCount] = useState(0);
     console.log("Parent Component rendered");
     const handleButtonClick = () => {
@@ -29,7 +29,9 @@ const State = () => {
 
 function ChildComponent({count}) {
     console.log("Child Component rendered");
-    return <div className="main-div"> <h2>Child Component - {count} </h2></div>
+    return <div className="main-div">
+         <h2>Child Component - {count} </h2>
+         </div>
 }
 
 
