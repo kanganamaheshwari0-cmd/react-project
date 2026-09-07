@@ -357,17 +357,19 @@
 
 // export default App
 
-import NetflixSeries from "./components/NetflixSeries";
+// import NetflixSeries from "./components/NetflixSeries";
 // import "./components/Netflix.css";
 import './components/Netflix.module.css'
 import React from 'react'
+import EventHandling from "./components/EventHandling";
 // import Profile from "./components/Profile";
 
 const App = () => {
   return (
     <section className="container">
-      <h1 className="card-heading">List of Best Netflix Series</h1>
-  <NetflixSeries/>
+      {/* <h1 className="card-heading">List of Best Netflix Series</h1> */}
+  {/* <NetflixSeries/> */}
+  <EventHandling/>
   </section>
   // <Profile/>
   );

@@ -1,0 +1,70 @@
+.main-div {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+ .g-div {
+    width: 100rem;
+    height: 50rem;
+    border: 1rem solid #000;
+    background-color: #85c1e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+ .p-div {
+    width: 80rem;
+    height: 30rem;
+    border: 1rem solid #000;
+    background-color: #82e0aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+ .c-div {
+    width: 60rem;
+    height: 10rem;
+    border: 1rem solid #000;
+    background-color: #f7dc6f;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+ .events-handling {
+    display: flex;
+} 
+
+ /* Common button styling */
+.events-handling button {
+    padding: 1.2rem 2.4rem;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+} 
+
+ /* Click button */
+.click-btn {
+    background-color: #f7dc6f;
+    padding: 14px;
+} 
+
+ /* Hover button */
+.hover-btn {
+    background-color: #82e0aa;
+    padding: 14px;
+
+} 
+
+/* Greeting button  */
+.greeting-btn {
+    background-color: #f7dc6f;
+}
