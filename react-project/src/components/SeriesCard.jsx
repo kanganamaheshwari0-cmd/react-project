@@ -19,7 +19,7 @@ const SeriesCard = ({data}) => {
        const ButtonThapa = styled.button`
         padding: 0.8rem 1.6rem;
         border:none;
-        font=size:1.6rem;
+        font-size:1.6rem;
         background-color:${(props) => props.rating >= 8.5 ? "#7dcea0" : "#f7dc6f"};
         color:var(--btn-color);
         font-weight: bold;
@@ -53,14 +53,15 @@ const SeriesCard = ({data}) => {
                         <img src={img_url} alt={name} className="w-full h-104 object-cover" />
                     </div>
 
-                    <div className={styles["card-content"]}>
+                    {/* <div className={styles["card-content"]}> */}
+                    <div className="flex flex-col gap-6 p-6 ">
                     <h2>Name: {name}</h2>
                     <Rating>
                     Rating:
                         <span className={`${styles.rating} ${ratingClass}`}> {rating}</span> 
                     </Rating>
                   
-                    <p>Summary: {description}</p>
+                    <p className="text-3xl font-bold underline text-cyan-300">Summary: {description}</p>
                     <p>Genre: {genre.join(", ")}</p>
                     <p>Cast: {cast.join(", ")}</p>
                     <a href={watch_url} target='blank'>
