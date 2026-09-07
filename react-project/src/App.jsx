@@ -359,12 +359,14 @@
 
 // import NetflixSeries from "./components/NetflixSeries";
 // import "./components/Netflix.css";
-import './components/Netflix.module.css'
+// import './components/Netflix.module.css'
 import React from 'react'
 // import EventHandling from "./components/EventHandling";
 // import EventProps from './components/EventProps';
-import EventPropagation from './components/EventPropagation';
+// import EventPropagation from './components/EventPropagation';
 // import Profile from "./components/Profile";
+import "./components/EV.css"
+import State from './components/hooks/State';
 
 const App = () => {
   return (
@@ -373,7 +375,8 @@ const App = () => {
   {/* <NetflixSeries/> */}
   {/* <EventHandling/> */}
   {/* <EventProps /> */}
-  <EventPropagation/>
+  {/* <EventPropagation/> */}
+  <State/>
   </section>
   // <Profile/>
   );
