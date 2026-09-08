@@ -368,7 +368,8 @@ import React from 'react'
 import "./components/EV.css"
 // import State from './components/hooks/State';
 // import { DerivedState } from './components/DerivedState';
-import { LiftingState } from './components/LiftStateUp';
+// import { LiftingState } from './components/LiftStateUp';
+import { ToggleSwitch } from './projects/ToggleSwitch/ToggleSwitch';
 
 const App = () => {
   return (
@@ -380,7 +381,8 @@ const App = () => {
   {/* <EventPropagation/> */}
   {/* <State/> */}
   {/* <DerivedState/> */}
-  <LiftingState/>
+  {/* <LiftingState/> */}
+  <ToggleSwitch/>
   {/* <Sibling/> */}
   </section>
   // <Profile/>
