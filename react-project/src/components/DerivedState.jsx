@@ -12,6 +12,7 @@ export const DerivedState = () => {
         { name: "Bob", age: 30 },
         { name: "Charlie", age: 35 },
         { name: "Angles", age:45 },
+        
     ])
 
     console.log(users);

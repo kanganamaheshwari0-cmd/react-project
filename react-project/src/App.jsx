@@ -367,7 +367,8 @@ import React from 'react'
 // import Profile from "./components/Profile";
 import "./components/EV.css"
 // import State from './components/hooks/State';
-import { DerivedState } from './components/DerivedState';
+// import { DerivedState } from './components/DerivedState';
+import { LiftingState } from './components/LiftStateUp';
 
 const App = () => {
   return (
@@ -378,7 +379,8 @@ const App = () => {
   {/* <EventProps /> */}
   {/* <EventPropagation/> */}
   {/* <State/> */}
-  <DerivedState/>
+  {/* <DerivedState/> */}
+  <LiftingState/>
   {/* <Sibling/> */}
   </section>
   // <Profile/>
