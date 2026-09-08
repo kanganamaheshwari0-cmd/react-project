@@ -366,7 +366,8 @@ import React from 'react'
 // import EventPropagation from './components/EventPropagation';
 // import Profile from "./components/Profile";
 import "./components/EV.css"
-import State from './components/hooks/State';
+// import State from './components/hooks/State';
+import { DerivedState } from './components/DerivedState';
 
 const App = () => {
   return (
@@ -376,7 +377,8 @@ const App = () => {
   {/* <EventHandling/> */}
   {/* <EventProps /> */}
   {/* <EventPropagation/> */}
-  <State/>
+  {/* <State/> */}
+  <DerivedState/>
   {/* <Sibling/> */}
   </section>
   // <Profile/>
