@@ -1,5 +1,7 @@
 import { useState } from "react"
 import "./ToggleSwitch.css"
+import { IoIosSwitch } from "react-icons/io";
+import { PiUserSwitchFill } from "react-icons/pi";
 
 export const ToggleSwitch = () => {
 
@@ -12,13 +14,19 @@ const handleToggleSwitch = () => {
 const checkIsOn = isOn ? "on" : "off"
 const toggleBGColor = {backgroundColor:isOn ? "#4caf50" : "#f44336"}
     return (
-    <div className="toggle-switch" style={toggleBGColor
-        
-    }
+        <>
+        <h1 style={{ color: "#000", textAlign: "center"}}>
+            Toggle Switch <IoIosSwitch style = {{color: "red", textAlign: "center"}} /> 
+            <PiUserSwitchFill style = {{color: "black", textAlign: "center"}} />
+            </h1>
+    <div
+     className="toggle-switch" 
+     style={toggleBGColor}
      onClick={handleToggleSwitch}>
         <div className={`switch ${checkIsOn}`}>
             <span className="switch-state">{checkIsOn}</span>
         </div>
     </div>
+</>
     );
 }
