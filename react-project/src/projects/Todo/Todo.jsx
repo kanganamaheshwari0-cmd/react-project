@@ -51,6 +51,26 @@ export const Todo = () => {
     return () => clearInterval(interval); //clearInterval() timer ko stop karta hai.
 
      }, []); //Ye useEffect ka dependency array hai.
+
+     //TODO HANDLEDELETETODO FUNCTION
+
+     const handleDeleteTodo = (value) => {
+        console.log(task); //Ye task array ko console mein print karega.
+        console.log(value); //Ye console mein batayega ki kaunsa task delete karne ke liye mila hai.
+        const updateTask = task.filter((curTask) => curTask !== value);
+        //filter() array ke elements ko check karta hai aur new array banata hai.
+        //value ka matlab hai jo task delete karna hai.
+        //curTask !== value Jo task delete hone wale task ke equal nahi hai, sirf usko new array mein rakho
+        setTask(updateTask); //Ab hum React ki task state ko new array se update kar rahe hain
+     };
+
+     //TODO HANDLECLEARTODODATA FUNCTION
+
+     const handleClearTodoData = () => {
+        setTask([]); //Ye directly task ko empty array bana deta hai.
+     };
+
+
      
     return (
         <section className="todo-container">
@@ -86,7 +106,8 @@ export const Todo = () => {
                                 <button className="check-btn">
                                     <MdCheck />
                                 </button>
-                                <button className="delete-btn">
+                                <button className="delete-btn" 
+                                onClick={() => handleDeleteTodo(curTask)}>
                                     <MdDeleteForever />
                                 </button>
                             </li>
@@ -96,6 +117,9 @@ export const Todo = () => {
                     }
                 </ul>
 
+            </section>
+            <section>
+                <button className="clear-btn" onClick= {handleClearTodoData}>Clear All</button>
             </section>
         </section>
     )
