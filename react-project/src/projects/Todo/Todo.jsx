@@ -23,14 +23,20 @@ export const Todo = () => {
         // event.preventDefault();// yeh ek method hai jo by default hame event provide karti hai taki ham form ka jo default behavior hai ham usko prevent kar sake
         //browser ka page baar baar reload na ho isliye ham iska use karte hai prevent ka
 
-        if(!inputValue) return; //Agar inputValue empty hai, toh function yahin stop kar do.
+        const{id, content, checked} = inputValue;
+        if(!content) return; // to check if the input field is empty or not
 
-        if(task.includes(inputValue)) //includes() check karta hai ki array ke andar given value already present hai ya nahi.
+        // if(!inputValue) return; //Agar inputValue empty hai, toh function yahin stop kar do.
+
+        // if(task.includes(inputValue)) //includes() check karta hai ki array ke andar given value already present hai ya nahi.
             // setInputValue("") //Agar same task already hai, toh input ko empty kar do.
-            return;
+            // return;
           //yeh check karta hai ki jo output mr aaray aaya hai usme yeh value present hai ya nahi
 
-        setTask((prevTask) => [...prevTask, inputValue]);//settask me jo previous value hai usne yeh [] empty Array dii
+          const ifTodoContentMatched = task.find((curTask) => curTask.content === content)
+          if(ifTodoContentMatched) return;
+
+        setTask((prevTask) => [...prevTask, {id,content,checked}]);//settask me jo previous value hai usne yeh [] empty Array dii
         //prevTask mein task ki previous/current state milti hai.Spread operator purane elements ko copy karta hai:
         //Purane tasks ko rakho aur new task ko array mein add kar do.
 
@@ -44,9 +50,9 @@ export const Todo = () => {
      //TODO HANDLEDELETETODO FUNCTION
 
      const handleDeleteTodo = (value) => {
-        console.log(task); //Ye task array ko console mein print karega.
-        console.log(value); //Ye console mein batayega ki kaunsa task delete karne ke liye mila hai.
-        const updateTask = task.filter((curTask) => curTask !== value);
+        // console.log(task); //Ye task array ko console mein print karega.
+        // console.log(value); //Ye console mein batayega ki kaunsa task delete karne ke liye mila hai.
+        const updateTask = task.filter((curTask) => curTask.content !== value);
         //filter() array ke elements ko check karta hai aur new array banata hai.
         //value ka matlab hai jo task delete karna hai.
         //curTask !== value Jo task delete hone wale task ke equal nahi hai, sirf usko new array mein rakho
@@ -59,7 +65,18 @@ export const Todo = () => {
         setTask([]); //Ye directly task ko empty array bana deta hai.
      };
 
+     // TODO HANDLECHECKEDTODO FUNCTIONALITY
 
+    const handleCheckedTodo = (content) => {
+        const updateTask = task.map((curTask) => {
+            if(curTask.content === content) {
+                return{...curTask, checked: !curTask.checked};
+            } else {
+                return curTask;
+            }
+        });
+        setTask(updateTask);
+    };
      
     return (
         <section className="todo-container">
@@ -73,12 +90,14 @@ export const Todo = () => {
             <section className="myUnOrdList">
                 <ul>
                     {
-                        task.map((curTask, index) => {
+                        task.map((curTask) => {
                             return (
                               <TodoList 
-                               key={index}
-                               data={curTask}
+                               key={curTask.id}
+                               data={curTask.content}
+                               checked={curTask.checked}
                                onHandleDeleteTodo = {handleDeleteTodo}
+                               onHandleCheckedTodo = {handleCheckedTodo}
                                />
                             );
 
