@@ -5,13 +5,26 @@ import "./Todo.css";
 import { TodoForm } from "./TodoForm";
 import { TodoList } from "./TodoList";
 import { TodoDate } from "./TodoDate";
+import {
+    getLocalStorageTodoData,
+    setLocalStorageTodoData,
+} from "./TodoLocalStorage";
+
+
+
+// const getLocalStorageTodoData = () => {
+//     const rawTodos = localStorage.getItem(todoKey);
+//         if(!rawTodos) return [];
+//         return JSON.parse(rawTodos);
+
+// }
 
 export const Todo = () => {
     // const [inputValue, setInputValue] = useState("");
 
     //inputValue     → current input ki value
    //setInputValue  → inputValue ko update karne ka function
-    const [task, setTask] = useState([]);
+    const [task, setTask] = useState( () => getLocalStorageTodoData());
 
     // const [dateTime, setDateTime] = useState("")
 
@@ -44,6 +57,10 @@ export const Todo = () => {
         // setInputValue("");
 
     };
+
+    setLocalStorageTodoData(task);
+
+    
 
     // console.log("hey")
 
