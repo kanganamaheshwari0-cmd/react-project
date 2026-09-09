@@ -366,10 +366,11 @@ import React from 'react'
 // import EventPropagation from './components/EventPropagation';
 // import Profile from "./components/Profile";
 import "./components/EV.css"
+import { Todo } from './projects/Todo/Todo';
 // import State from './components/hooks/State';
 // import { DerivedState } from './components/DerivedState';
 // import { LiftingState } from './components/LiftStateUp';
-import { ToggleSwitch } from './projects/ToggleSwitch/ToggleSwitch';
+// import { ToggleSwitch } from './projects/ToggleSwitch/ToggleSwitch';
 
 const App = () => {
   return (
@@ -382,7 +383,8 @@ const App = () => {
   {/* <State/> */}
   {/* <DerivedState/> */}
   {/* <LiftingState/> */}
-  <ToggleSwitch/>
+  {/* <ToggleSwitch/> */}
+      <Todo/>
   {/* <Sibling/> */}
   </section>
   // <Profile/>
