@@ -366,7 +366,8 @@ import React from 'react'
 // import EventPropagation from './components/EventPropagation';
 // import Profile from "./components/Profile";
 import "./components/EV.css"
-import CounterChallenge from './components/hooks/useState/Challenge';
+import ControlledForm from './components/hooks/useState/Controlled';
+// import CounterChallenge from './components/hooks/useState/Challenge';
 // import { Todo } from './projects/Todo/Todo';
 // import { Keys } from './Keys';
 // import ShortCircuitExample from './components/ShortCircuit';
@@ -392,7 +393,8 @@ const App = () => {
       {/* <Keys/> */}
       {/* <ShortCircuitExample/> */}
       {/* <Counter/> */}
-      <CounterChallenge/>
+      {/* <CounterChallenge/> */}
+      <ControlledForm/>
   {/* <Sibling/> */}
   </section>
   // <Profile/>
