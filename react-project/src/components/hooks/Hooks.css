@@ -48,3 +48,35 @@
 .grid-three-cols button:hover {
     background-color: #333;
 }
+
+/* useState section */
+.state-container {
+    background-color: #f0f3ff;
+    min-height: 100vh;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.state-container h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 90px;
+}
+
+.state-container p {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.state-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.state-btn:hover {
+    background-color: #222;
+}

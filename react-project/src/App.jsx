@@ -368,7 +368,8 @@ import React from 'react'
 import "./components/EV.css"
 // import { Todo } from './projects/Todo/Todo';
 // import { Keys } from './Keys';
-import ShortCircuitExample from './components/ShortCircuit';
+// import ShortCircuitExample from './components/ShortCircuit';
+import { Counter } from './components/hooks/useState';
 // import State from './components/hooks/State';
 // import { DerivedState } from './components/DerivedState';
 // import { LiftingState } from './components/LiftStateUp';
@@ -388,7 +389,8 @@ const App = () => {
   {/* <ToggleSwitch/> */}
       {/* <Todo/> */}
       {/* <Keys/> */}
-      <ShortCircuitExample/>
+      {/* <ShortCircuitExample/> */}
+      <Counter/>
   {/* <Sibling/> */}
   </section>
   // <Profile/>

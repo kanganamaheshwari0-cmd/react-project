@@ -6,12 +6,22 @@ const ShortCircuitExample = () => {
     //isLoggedIn     → current value
     //setIsLoggedIn  → value change karne ka function
     //true Matlab starting mein user logged in hai.
-    const [user, setUser] = useState("")
+        // const [user, setUser] = useState("")
+        // // const [count, setCount] = useState(0);
+        // if(user) {
+        //     //  setCount(count + 1) ;
+        //      const [count, setCount] = useState(0);
+        
+        // }
+        // ``;
+
+
     return (
         <section className="container short-container">
-            <h1>welcome to the Shortcircuit evaltation</h1>
+            <h1>welcome to the Shortcircuit evaluation</h1>
 
-            {isLoggedIn && <p>You aree logged in!</p>} //Agar condition true hai, tab element render karo.
+            {isLoggedIn && <p>You aree logged in!</p>} 
+            {/* //Agar condition true hai, tab element render karo. */}
 
             {user ? `Hello ${user}` : "Please logged in!"}
 
