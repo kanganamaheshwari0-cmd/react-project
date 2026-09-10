@@ -367,7 +367,8 @@ import React from 'react'
 // import Profile from "./components/Profile";
 import "./components/EV.css"
 // import { Todo } from './projects/Todo/Todo';
-import { Keys } from './Keys';
+// import { Keys } from './Keys';
+import ShortCircuitExample from './components/ShortCircuit';
 // import State from './components/hooks/State';
 // import { DerivedState } from './components/DerivedState';
 // import { LiftingState } from './components/LiftStateUp';
@@ -386,7 +387,8 @@ const App = () => {
   {/* <LiftingState/> */}
   {/* <ToggleSwitch/> */}
       {/* <Todo/> */}
-      <Keys/>
+      {/* <Keys/> */}
+      <ShortCircuitExample/>
   {/* <Sibling/> */}
   </section>
   // <Profile/>
