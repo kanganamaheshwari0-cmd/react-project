@@ -366,10 +366,11 @@ import React from 'react'
 // import EventPropagation from './components/EventPropagation';
 // import Profile from "./components/Profile";
 import "./components/EV.css"
+import CounterChallenge from './components/hooks/useState/Challenge';
 // import { Todo } from './projects/Todo/Todo';
 // import { Keys } from './Keys';
 // import ShortCircuitExample from './components/ShortCircuit';
-import { Counter } from './components/hooks/useState';
+// import { Counter } from './components/hooks/useState';
 // import State from './components/hooks/State';
 // import { DerivedState } from './components/DerivedState';
 // import { LiftingState } from './components/LiftStateUp';
@@ -390,7 +391,8 @@ const App = () => {
       {/* <Todo/> */}
       {/* <Keys/> */}
       {/* <ShortCircuitExample/> */}
-      <Counter/>
+      {/* <Counter/> */}
+      <CounterChallenge/>
   {/* <Sibling/> */}
   </section>
   // <Profile/>
